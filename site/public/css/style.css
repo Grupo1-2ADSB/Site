@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    /* 
+       Variaveis e tamanhos pré-definidos 
+       ** Variaveis **
+        - Para utilizar coloque var(--nomeDaVariavel)
+    */
+
+    /* 
+       CORES:
+       Azul principal - cor principal: utilizado em botões, alguns textos, degradê
+       Preto - títulos: juntamente em bold
+       Preto - textos: Sem bold  
+       Branco - Utilizado em botões, fundos, cor de fontes, etc
+       Degradê - Azul degradê + degradê 2
+       ----------------------------------------------------------------------------------
+       FONTES:
+       Fonte padrão: Poppins
+       Fonte secundária: Arial, helvetica, sans-serif
+       ----------------------------------------------------------------------------------
+       TAMANHOS:
+       Tamanho fonte padrão: 16px = 1rem
+       Tamanho da logo marca: "Smart Analytic Machine"
+       Tamanho Títulos: Utilizado em h1s, etc 
+       TamanhoTxt: tamanho utilizado nos textos normais
+
+    */
+    --azulDegrade: (#3E838C);
+    --azulDegrade2: (#22A59F);
+    --azulPrincipal: (#1EA49D);
+    --preto: (#222222);
+    --branco: (#FFFFFF);   
+    --tamanhoTxt: 1.5rem; 
+    --tamanhoLogoMarca: 1.5rem;
+    --tamanhoTitulos: 3.75rem;
+    font-size: 16px;
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
+}
