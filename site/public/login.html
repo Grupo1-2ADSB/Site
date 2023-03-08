@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Analytic Machine</title>
     <link rel="stylesheet" href="./css/login.css">
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -30,12 +30,17 @@
 
     <div class="login" >
         <div class="container">
-
             <div class="form_login">
-                <h1 id="login" >Login</h1>
-                <div class="inputs">
-                    <input placeholder="E-mail" class="input" id="input_email" type="email">
-                    <input placeholder="Senha" class="input" id="input_senha" type="password">
+                <h1>Login</h1>
+                <div class="inputField">
+                    <div class="inputCamp">
+                        <input class="input" id="iptEmail" type="text" required>
+                        <label for="iptEmail">E-mail</label>
+                    </div>
+                    <div class="inputCamp">
+                        <input class="input" id="iptSenha" type="password" required>
+                        <label for="iptSenha">Senha</label>
+                    </div>
                 </div>
                 <button id="btn_login" >Entrar</button>
                <div id="nao_possui"> Não possui conta? <a href="">Cadastre-se</a> </div>

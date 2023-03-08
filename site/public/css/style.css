@@ -33,7 +33,13 @@
     --branco: #FFFFFF;   
     --tamanhoTxt: 1.5rem; 
     --tamanhoLogoMarca: 1.5rem;
-    --tamanhoTitulos: 3.75rem;
+    --tamanhoTitulos: 2.5rem;
     font-size: 16px;
     font-family: 'Poppins', Arial, helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
