@@ -1,0 +1,186 @@
+/* HEADER */
+header {
+    display: flex;
+    height: 100px;
+    background-color: var(--branco);
+    border-bottom: 2px solid var(--azulPrincipal);
+}
+
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+header .container .middleItens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+header a span {
+    font-size: var(--tamanhoLogoMarca);
+}
+
+header a:hover {
+    border-bottom: 2px solid var(--azulPrincipal);
+    transition: .2s ease-in;
+}
+
+header .navbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar li a.btnCadastro {
+    background-color: var(--azulPrincipal);
+    color: var(--branco);
+    border: none;
+    padding: 20%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navbar li a.btnCadastro:hover {
+    background-color: var(--branco);
+    color: var(--azulPrincipal);
+    border: 2px solid var(--azulPrincipal);
+}
+/* HEADER */
+
+/* CADASTRO */
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.cadastro .imagem {
+    width: 55%;
+    background-size: cover;
+    background-image: url(../assets/imagemCadastro.png);
+}
+
+.cadastro .formCadastro {
+    background-image: linear-gradient(to left, var(--azulDegrade), var(--azulDegrade2));
+    width: 75vw;
+}
+
+.cadastro .formCadastro .title {
+    font-size: var(--tamanhoTitulos);
+    color: var(--branco);
+    text-align: center;
+    font-weight: 400;
+}
+
+input {
+    background-color: transparent;
+    color: var(--branco);
+}
+
+.form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 17%;
+}
+
+.inputField {
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+    
+}
+
+.inputField label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+    color: var(--branco);
+}
+
+.inputField .iptCamp {
+    border: 0;
+    border-bottom: 2px solid var(--branco);
+    outline: none;
+    padding: 1.2%;
+}
+
+.inputField .iptCamp:focus,
+.inputField .iptCamp:valid {
+    border-bottom: 2px solid var(--branco);
+}
+
+.inputField .iptCamp:focus ~ label,
+.inputField .iptCamp:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 0.75rem;
+}
+
+.formAdd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 35%;
+}
+
+.formAdd button {
+    background-color: var(--branco);
+    color: var(--azulPrincipal);
+    width: 10vw;
+    border: 2px solid var(--azulPrincipal);
+    border-radius: 5px;
+    padding: 0.5%;
+    cursor: pointer;
+    
+}
+
+.formAdd button:hover {
+    background-color: var(--azulPrincipal);
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    transition: .5s ease-in-out;
+}
+
+.other {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 20vw;
+    gap: 2%;
+    color: var(--branco);
+}
+
+.other a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+/* CADASTRO */
