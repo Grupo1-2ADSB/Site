@@ -116,13 +116,12 @@ button {
   overflow: hidden;
 }
 
-/* header */
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: transparent;
+  background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: 0.4s;
 }
@@ -155,7 +154,7 @@ button {
 }
 
 .nav-button,
-.nav-link {
+.nav-link, .nav-login {
   font-weight: var(--font-medium);
   transition: 0.4s;
 }
@@ -164,8 +163,14 @@ button {
   color: var(--azulPrincipal);
 }
 
-.nav-button:hover {
-  background-color: var(--azulPrincipal);
+.nav-login:hover {
+  color: var(--azulPrincipal);
+}
+
+.nav-login {
+  color: var(--preto);
+  text-decoration: underline;
+  padding-left: 1rem;
 }
 
 .home {
@@ -229,6 +234,10 @@ button {
   border-radius: 8px;
   transition: 0.4s;
   cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--azulDegrade);
 }
 
 .about-img {
@@ -480,12 +489,6 @@ button {
     height: 280px;
   }
 
-  .nav-link a {
-    display: none;
-    overflow: hidden;
-    display: block;
-  }
-
   .call-container {
     padding: 2rem 1rem;
   }
@@ -503,12 +506,6 @@ button {
 
   .home {
     padding-bottom: 0;
-  }
-
-  .nav-link a {
-    display: block;
-    display: none;
-    overflow: hidden;
   }
 }
 
