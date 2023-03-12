@@ -153,6 +153,10 @@ button {
   color: var(--preto);
 }
 
+.nav-text > span {
+  visibility: visible;
+}
+
 .nav-button,
 .nav-link,
 .nav-login {
@@ -481,9 +485,28 @@ button {
   margin: 5rem 0 1rem;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+
+  .home {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
   .nav-menu {
     padding: 1.3rem 1.5rem;
+  }
+
+  .nav-logo a {
+    display: none;
   }
 
   .home-value {
@@ -497,21 +520,6 @@ button {
 
   .call-container {
     padding: 2rem 1rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .section {
-    padding: 3.5rem 0 1rem;
-  }
-
-  .home {
-    padding-bottom: 0;
   }
 }
 
@@ -624,6 +632,7 @@ button {
   .nav-list {
     display: flex;
     column-gap: 3rem;
+    margin: 1rem;
   }
 
   .nav-link {
