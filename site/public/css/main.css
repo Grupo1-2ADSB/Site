@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --biggest-font-size: 2.5rem;
+    --biggest-font-size: 2.2rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -154,7 +154,8 @@ button {
 }
 
 .nav-button,
-.nav-link, .nav-login {
+.nav-link,
+.nav-login {
   font-weight: var(--font-medium);
   transition: 0.4s;
 }
@@ -211,6 +212,8 @@ button {
 
 .home-value-description {
   font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--cinza);
 }
 
 .home-image {
@@ -277,6 +280,7 @@ button {
 
 .group-description,
 .about-description {
+  color: var(--cinza);
   margin-bottom: 2.5rem;
 }
 
@@ -306,6 +310,7 @@ button {
 
 .call-company {
   font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
   color: var(--azulPrincipal);
   margin-bottom: 1rem;
 }
@@ -471,6 +476,7 @@ button {
 
 .footer-copy {
   text-align: center;
+  font-weight: var(--font-medium);
   color: var(--azulPrincipal);
   margin: 5rem 0 1rem;
 }
