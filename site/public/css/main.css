@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-
-    /* 
+  /* 
        VARIAVEIS E VALORES PRÉ-DEFINIDOS
        ----------------------------------------------------------------------------------
        COMO USAR
@@ -26,46 +25,46 @@
        TamanhoTxt: tamanho utilizado nos textos normais
     */
 
-    --azulDegrade: #3E838C;
-    --azulDegrade2: #22A59F;
-    --azulPrincipal: #1EA49D;
-    --preto: #222222;
-    --cinza: #797979;
-    --body-color: #fafafa;
-    --branco: #FFFFFF;
+  --azulDegrade: #3e838c;
+  --azulDegrade2: #22a59f;
+  --azulPrincipal: #1ea49d;
+  --preto: #222222;
+  --cinza: #797979;
+  --body-color: #fafafa;
+  --branco: #ffffff;
 
-    --tamanhoTxt: 1.5rem;
-    --tamanhoLogoMarca: 1.5rem;
-    --tamanhoTitulos: 2.5rem;
-    --header-height: 3.5rem;
+  --tamanhoTxt: 1.5rem;
+  --tamanhoLogoMarca: 1.5rem;
+  --tamanhoTitulos: 2.5rem;
+  --header-height: 3.5rem;
 
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-    --font-medium: 500;
-    --font-semi-bold: 600;
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-    --z-tooltip: 10;
-    --z-fixed: 100;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 
-    --body-font: "Poppins", sans-serif;
-    font-size: 16px;
-    font-family: 'Poppins', Arial, helvetica, sans-serif;
+  --body-font: "Poppins", sans-serif;
+  font-size: 16px;
+  font-family: "Poppins", Arial, helvetica, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -148,8 +147,12 @@ button {
 .nav {
   height: var(--header-height);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.nav-menu{
+  margin-right: 6rem;
 }
 
 .nav-logo {
@@ -172,8 +175,13 @@ button {
   color: var(--preto);
 }
 
-.nav-text>span {
+.nav-text > span {
   visibility: visible;
+}
+
+.nav-login-respo {
+  display: flex;
+  align-items: center;
 }
 
 .nav-button,
@@ -412,7 +420,7 @@ button {
 
 /* animação do input subindo */
 /* seletor adjacente para que somente o contact-label receba essas propriedades */
-.contact-input:focus+.contact-label {
+.contact-input:focus + .contact-label {
   top: -0.75rem;
   left: 0;
   font-size: var(--smaller-font-size);
@@ -420,7 +428,8 @@ button {
 }
 
 /* animação do input subindo */
-.contact-input:not(:placeholder-shown).contact-input:not(:focus)+.contact-label {
+.contact-input:not(:placeholder-shown).contact-input:not(:focus)
+  + .contact-label {
   top: -0.75rem;
   font-size: var(--smaller-font-size);
   z-index: 10;
