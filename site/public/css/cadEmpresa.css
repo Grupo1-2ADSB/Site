@@ -2,7 +2,7 @@
 .cadastro {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 35em;
 }
 
 .cadastro .imagem {
@@ -21,6 +21,7 @@
     color: var(--branco);
     text-align: center;
     font-weight: 400;
+    padding-top: 2rem;
 }
 
 input {
@@ -71,8 +72,8 @@ input {
     border-bottom: 2px solid var(--branco);
 }
 
-.inputField .iptCamp:focus ~ label,
-.inputField .iptCamp:valid ~ label {
+.inputField .iptCamp:focus~label,
+.inputField .iptCamp:valid~label {
     transform: translateY(-20px);
     font-size: 0.75rem;
 }

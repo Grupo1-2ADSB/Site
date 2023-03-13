@@ -2,7 +2,7 @@
 .cadastro {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 34em;
 }
 
 .cadastro .imagem {
@@ -21,6 +21,7 @@
     color: var(--branco);
     text-align: center;
     font-weight: 400;
+    padding-top: 2rem;
 }
 
 input {
