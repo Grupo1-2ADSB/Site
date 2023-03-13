@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Empresa</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Empresa | Smart Analytic Machine</title>
     <link rel="stylesheet" href="css/cadEmpresa.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/response.css">
 </head>
+
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <a href="index.html">
-                <!-- <img src="assets/logo.png" alt=""> -->
-                <span>Smart Analytic Machine</span>
-            </a>
-            <ul class="navbar">
-                <div class="middleItens">
-                    <li>
-                        <a href="">Inicio</a>
+    <header class="header" id="header" style="position: initial">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <img src="imgs/logo.png" alt="logotipo Smart Analytic Machine" />
+                <a href="index.html" class="nav-text">
+                    <span>Smart Analytic Machine</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="bx bx-home-alt-2"></i>
+                            <span>Início</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="">Sobre</a>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">
+                            <i class="bx bx-star"></i>
+                            <span>Sobre</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="">Produto</a>
+                    <li class="nav-item">
+                        <a href="index.html#group" class="nav-link">
+                            <i class="bx bx-package"></i>
+                            <span>Produto</span>
+                        </a>
                     </li>
-                </div>
-                <li>
-                    <a class="btnCadastro">Cadastro</a>
-                </li>
-            </ul>
-        </div>
+                </ul>
+            </div>
+            <a href="cadastroEmpresa.html" class="button nav-button">Cadastro</a>
+            <a href="login.html" class="nav-login">Login</a>
+        </nav>
     </header>
     <!-- Header -->
     <!-- Cadastro  -->
@@ -90,14 +103,23 @@
                 <div class="formAdd">
                     <button class="btn">Cadastrar</button>
                     <div class="other">
-                        <span>Já possui uma conta?</span><a href="">Entrar</a>
+                        <span>Já possui uma conta?</span><a href="login.html">Entrar</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Cadastro -->
-    <!-- footer -->
-    <!-- footer -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
+
 </html>

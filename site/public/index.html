@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/response.css">
   <title>Página Inicial | Smart Analytic Machine</title>
 </head>
 
@@ -14,7 +15,7 @@
     <nav class="nav container">
       <div class="nav-logo">
         <img src="imgs/logo.png" alt="logotipo Smart Analytic Machine" />
-        <a href="#" class="nav-text">
+        <a href="index.html" class="nav-text">
           <span>Smart Analytic Machine</span></a>
       </div>
       <div class="nav-menu">
@@ -39,8 +40,8 @@
           </li>
         </ul>
       </div>
-      <a href="#" class="button nav-button">Login</a>
-      <!-- <a href="#" class="nav-login">Login</a> -->
+      <a href="cadastroEmpresa.html" class="button nav-button">Cadastrar-se</a>
+      <a href="login.html" class="nav-login">Login</a>
     </nav>
   </header>
   <main class="main">
@@ -159,12 +160,15 @@
           Gostou da nossa proposta? <br />
           Cadastre sua empresa!
         </h1>
-        <a href="#" class="button slogan-button">Cadastro</a>
+        <a href="cadastroEmpresa.html" class="button slogan-button">Cadastro</a>
       </div>
     </section>
     <section class="map section">
       <div class="map-container container">
-        <img src="imgs/Maps.png" alt="">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2873447333654!2d-46.661614!3d-23.558121299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sS%C3%A3o%20Paulo%20Tech%20School!5e0!3m2!1spt-BR!2sbr!4v1678649466730!5m2!1spt-BR!2sbr"
+          width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -172,6 +176,10 @@
     <div class="footer-container container grid">
       <div class="footer-content">
         <a href="#" class="footer-logo">Smart Analytic Machine</a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2873447333654!2d-46.661614!3d-23.558121299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2b063f663%3A0xc567c0d16d0bc582!2sS%C3%A3o%20Paulo%20Tech%20School!5e0!3m2!1spt-BR!2sbr!4v1678649466730!5m2!1spt-BR!2sbr"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="footer-content">
         <h3 class="footer-title">Serviços</h3>
@@ -213,7 +221,16 @@
       &#169; Smart Analytic Machine. Todos os direitos reservados
     </p>
   </footer>
-
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="js/main.js"></script>
 </body>

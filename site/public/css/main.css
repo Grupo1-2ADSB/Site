@@ -1,52 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --header-height: 3.5rem;
 
-  --azulDegrade: #3e838c;
-  --azulDegrade2: #22a59f;
-  --azulPrincipal: #1ea49d;
-  --preto: #222222;
-  --branco: #ffffff;
-  --cinza: #797979;
-  --body-color: #fafafa;
+    /* 
+       VARIAVEIS E VALORES PRÉ-DEFINIDOS
+       ----------------------------------------------------------------------------------
+       COMO USAR
+       Utilizar var(--nomeDaVariavel)
+       ----------------------------------------------------------------------------------
+       CORES
+       Azul principal - cor principal: utilizado em botões, alguns textos, degradê
+       Preto - títulos: juntamente em bold
+       Preto - textos: Sem bold  
+       Branco - Utilizado em botões, fundos, cor de fontes, etc
+       Degradê - Azul degradê + degradê 2
+       ----------------------------------------------------------------------------------
+       FONTES
+       Fonte padrão: Poppins
+       Fonte secundária: Arial, helvetica, sans-serif
+       ----------------------------------------------------------------------------------
+       TAMANHOS
+       Tamanho fonte padrão: 16px = 1rem
+       Tamanho da logo marca: "Smart Analytic Machine"
+       Tamanho Títulos: Utilizado em h1s, etc 
+       TamanhoTxt: tamanho utilizado nos textos normais
+    */
 
-  --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+    --azulDegrade: #3E838C;
+    --azulDegrade2: #22A59F;
+    --azulPrincipal: #1EA49D;
+    --preto: #222222;
+    --cinza: #797979;
+    --body-color: #fafafa;
+    --branco: #FFFFFF;
 
-  --font-medium: 500;
-  --font-semi-bold: 600;
+    --tamanhoTxt: 1.5rem;
+    --tamanhoLogoMarca: 1.5rem;
+    --tamanhoTitulos: 2.5rem;
+    --header-height: 3.5rem;
 
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
 
-@media screen and (min-width: 1024px) {
-  :root {
-    --biggest-font-size: 2.2rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    --body-font: "Poppins", sans-serif;
+    font-size: 16px;
+    font-family: 'Poppins', Arial, helvetica, sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -129,7 +148,7 @@ button {
 .nav {
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -153,7 +172,7 @@ button {
   color: var(--preto);
 }
 
-.nav-text > span {
+.nav-text>span {
   visibility: visible;
 }
 
@@ -198,6 +217,7 @@ button {
 .home-description {
   color: var(--cinza);
   margin-bottom: 2rem;
+  width: 80%;
 }
 
 .home-button {
@@ -392,7 +412,7 @@ button {
 
 /* animação do input subindo */
 /* seletor adjacente para que somente o contact-label receba essas propriedades */
-.contact-input:focus + .contact-label {
+.contact-input:focus+.contact-label {
   top: -0.75rem;
   left: 0;
   font-size: var(--smaller-font-size);
@@ -400,8 +420,7 @@ button {
 }
 
 /* animação do input subindo */
-.contact-input:not(:placeholder-shown).contact-input:not(:focus)
-  + .contact-label {
+.contact-input:not(:placeholder-shown).contact-input:not(:focus)+.contact-label {
   top: -0.75rem;
   font-size: var(--smaller-font-size);
   z-index: 10;
@@ -483,280 +502,4 @@ button {
   font-weight: var(--font-medium);
   color: var(--azulPrincipal);
   margin: 5rem 0 1rem;
-}
-
-@media screen and (max-width: 350px) {
-  .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .section {
-    padding: 3.5rem 0 1rem;
-  }
-
-  .home {
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  .nav-menu {
-    padding: 1.3rem 1.5rem;
-  }
-
-  .nav-logo a {
-    display: none;
-  }
-
-  .home-value {
-    column-gap: 1rem;
-  }
-
-  .home-img {
-    width: 390px;
-    height: 280px;
-  }
-
-  .call-container {
-    padding: 2rem 1rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .nav-menu {
-    width: 342px;
-  }
-
-  .group-description,
-  .about-description {
-    padding: 0 4rem;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .home-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 2rem;
-  }
-
-  .home-data {
-    padding-bottom: 2rem;
-  }
-
-  .group-container,
-  .about-container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  .group-data,
-  .group-title,
-  .about-data,
-  .about-title {
-    text-align: initial;
-  }
-
-  .group-description,
-  .about-description {
-    padding: 0;
-  }
-
-  .call-container {
-    padding: 3rem 13rem;
-  }
-
-  .contact-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer-container {
-    column-gap: 3rem;
-  }
-
-  .footer-subscribe {
-    width: initial;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .group-img {
-    width: 450px;
-  }
-
-  .about-img {
-    width: 450px;
-    order: -1;
-  }
-
-  .group-description,
-  .about-description {
-    padding-right: 7rem;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
-  }
-
-  .footer-copy {
-    margin: 7rem 0 2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .section {
-    padding: 7.5rem 0 1rem;
-  }
-
-  .section-title {
-    font-size: 2.25rem;
-  }
-
-  .section-subtitle {
-    font-size: var(--normal-font-size);
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-
-  .nav-menu {
-    width: initial;
-    margin-left: auto;
-  }
-
-  .nav-list {
-    display: flex;
-    column-gap: 3rem;
-    margin: 1rem;
-  }
-
-  .nav-link {
-    color: var(--preto);
-  }
-
-  .nav-link i {
-    display: none;
-  }
-
-  .nav-button {
-    display: inline-block;
-  }
-
-  .home {
-    padding-bottom: 0;
-  }
-
-  .home-container {
-    padding-top: 5rem;
-    column-gap: 2rem;
-  }
-
-  .home-data {
-    padding-bottom: 4rem;
-  }
-
-  .home-title {
-    margin-bottom: 2rem;
-  }
-
-  .home-description {
-    margin-bottom: 3rem;
-  }
-
-  .home-value {
-    column-gap: 3.5rem;
-  }
-
-  .home-img {
-    width: 672px;
-    height: 634px;
-  }
-
-  .about-container {
-    padding: auto;
-    column-gap: 8rem;
-  }
-
-  .call-container {
-    padding: 4rem 10rem 4.5rem;
-    border-radius: 2rem;
-  }
-
-  .call-title {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .call-company {
-    font-size: var(--normal-font-size);
-    padding: 0 8rem;
-  }
-
-  .slogan-container {
-    padding: 4rem 10rem 4.5rem;
-    border-radius: 2rem;
-  }
-
-  .slogan-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .slogan-button {
-    font-size: var(--normal-font-size);
-  }
-}
-
-@media screen and (min-width: 1040px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .home-container {
-    column-gap: 4rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-menu {
-    width: 90%;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 2rem;
-    margin: 0 auto;
-    padding: 1.3rem 3rem;
-    background-color: var(--body-color);
-    box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.15);
-    border-radius: 1.25rem;
-    transition: 0.4s;
-  }
-
-  .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-link {
-    display: flex;
-    padding: 0.5rem;
-    border-radius: 50%;
-    color: var(--preto);
-  }
-
-  .nav-link i {
-    font-size: 1.25rem;
-    color: var(--azulPrincipal);
-  }
-
-  .nav-link span {
-    display: none;
-  }
 }

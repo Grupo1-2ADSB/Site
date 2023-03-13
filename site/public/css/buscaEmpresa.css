@@ -1,54 +1,3 @@
-body {
-    margin: 0;
-
-}
-
-.container {
-    margin: 0;
-    width: 80%;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--branco);
-    border-bottom: 2px solid var(--azulDegrade2);
-    height: 6em;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-}
-
-.header .img-logo-header {
-    width: 200px;
-}
-
-.header a {
-    text-decoration: none;
-    color: black;
-    padding: 7px;
-    transition: 1s;
-}
-
-.header #aqui {
-    background: var(--azulPrincipal);
-    color: var(--branco);
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.header #aqui:hover {
-    background-color: var(--branco);
-    color: var(--azulPrincipal);
-    border: 2px solid var(--azulPrincipal);
-}
-
-.header a:hover {
-    border-bottom: 2px solid var(--azulPrincipal);
-    transition: .2s ease-in;
-}
-
 .formulario {
     background-image: linear-gradient(to left, var(--azulDegrade), var(--azulDegrade2));
     width: 100%;
@@ -121,27 +70,4 @@ body {
 .box input#buscaEmpresa:valid~label {
     transform: translateY(-25px);
     font-size: 0.75rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    background-color: #F9F9F9;
-
-}
-
-.listas_footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.listas_footer ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    line-height: 3rem;
 }
